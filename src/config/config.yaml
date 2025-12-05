@@ -1,0 +1,17 @@
+data:
+  raw_path: data/raw/flights.csv
+  processed_path: data/processed/
+  target_col: IS_DELAY
+
+models:
+  random_forest:
+    n_estimators: 100
+    max_depth: 10
+  xgboost:
+    n_estimators: 100
+    max_depth: 6
+
+metrics:
+  rmse: true
+  mae: true
+  r2: true
